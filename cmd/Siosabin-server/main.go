@@ -4,18 +4,16 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/gin-gonic/gin"
 	"github.com/assam5649/Siosabin-go/pkg/config"
+	"github.com/gin-gonic/gin"
 )
 
 func main() {
 
-	err := config.wait()
+	err := config.Wait()
 
 	if err != nil {
 		log.Fatal(err)
-
-		return nil, err
 	}
 
 	r := gin.Default()

@@ -6,7 +6,7 @@ import (
 	"time"
 )
 
-func wait() error {
+func Wait() error {
 
 	dsn := "root:pass@tcp(mysql-container:3306)/db"
 	db, err := sql.Open("mysql", dsn)
