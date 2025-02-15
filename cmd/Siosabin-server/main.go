@@ -5,10 +5,19 @@ import (
 	"log"
 
 	"github.com/gin-gonic/gin"
-	_ "github.com/go-sql-driver/mysql"
+	"github.com/assam5649/Siosabin-go/pkg/config"
 )
 
 func main() {
+
+	err := config.wait()
+
+	if err != nil {
+		log.Fatal(err)
+
+		return nil, err
+	}
+
 	r := gin.Default()
 
 	r.GET("/", func(c *gin.Context) {
