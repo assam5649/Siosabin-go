@@ -6,11 +6,11 @@ import (
 	"time"
 )
 
-func Wait() error {
+func Wait() {
 
 	dsn := "root:pass@tcp(mysql-container:3306)/db"
-	db, err := sql.Open("mysql", dsn)
 	for {
+		db, err := sql.Open("mysql", dsn)
 		if err != nil {
 			fmt.Println("Waiting for MySQL to be ready...")
 			time.Sleep(5 * time.Second)
@@ -28,5 +28,4 @@ func Wait() error {
 		fmt.Println("Waiting for MySQL to be ready...")
 		time.Sleep(5 * time.Second)
 	}
-	return err
 }

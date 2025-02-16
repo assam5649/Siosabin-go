@@ -10,11 +10,7 @@ import (
 
 func main() {
 
-	err := config.Wait()
-
-	if err != nil {
-		log.Fatal(err)
-	}
+	config.Wait()
 
 	r := gin.Default()
 
