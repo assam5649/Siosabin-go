@@ -1,4 +1,4 @@
-module github.com/assam5649/Siosabin-go
+module github.com/assam5649/Siosabin-go/Siosabin-server
 
 go 1.23.4
 
