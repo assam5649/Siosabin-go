@@ -1,5 +1,5 @@
 package predict
 
-func day() {
+func Day() {
 
 }
