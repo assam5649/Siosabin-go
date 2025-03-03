@@ -1,5 +1,5 @@
 package predict
 
-func hour() {
+func Hour() {
 
 }
