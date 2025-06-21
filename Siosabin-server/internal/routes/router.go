@@ -1,9 +1,9 @@
 package routes
 
 import (
-	"github.com/assam5649/Siosabin-go/Siosabin-server/internal/routes/auth"
-	"github.com/assam5649/Siosabin-go/Siosabin-server/internal/routes/predict"
-	"github.com/assam5649/Siosabin-go/Siosabin-server/internal/routes/user"
+	"Siosabin-go/Siosabin-server/internal/routes/auth"
+	"Siosabin-go/Siosabin-server/internal/routes/predict"
+	"Siosabin-go/Siosabin-server/internal/routes/user"
 
 	"github.com/gin-gonic/gin"
 )
