@@ -4,7 +4,8 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/assam5649/Siosabin-go/Siosabin-server/pkg/config"
+	"Siosabin-go/Siosabin-server/pkg/config"
+
 	"github.com/gin-gonic/gin"
 )
 
